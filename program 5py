@@ -1,0 +1,13 @@
+import numpy as np
+
+# Assuming 'student_scores' is your 4x4 NumPy array
+
+# Calculate the average score for each subject
+average_scores = np.mean(student_scores, axis=0)
+
+# Determine the subject with the highest average score
+subject_with_highest_average = np.argmax(average_scores)
+
+# Display the results
+print("Average Scores for Each Subject:", average_scores)
+print("Subject with the Highest Average Score:", subject_with_highest_average)
